@@ -112,6 +112,11 @@ The derivative has set our output to be 10.416. Derivative is meant to dampen a 
 
 <!-- _Note that since we are working with a *discrete* error function we need to use [numerical differentiation](https://en.wikipedia.org/wiki/Numerical_differentiation) methods_ -->
 
+## The Step Response
+In identifying our system, (how it works and how it responds to different inputs) the step response is one of the fundamental tools that we have. Broadly, the step response helps us visualize how our system responds to an instantaneous change in our input. Typically, we use the unit step response because of its simplicity.
+
+When we input this signal into our system, we can then analyze how our system responds and reacts. Ideall, we would want the system output to match the system input. That is, if I command my motor to position 1 instantaneously, my motor instantaneously moves to this position. In reality, this isn't possible, but using controls we can optimize this performance. Look at the graph below, you can see how different control signals can imapct the step response.
+
 
 ## Your assignment
 
