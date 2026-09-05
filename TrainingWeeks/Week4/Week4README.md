@@ -179,7 +179,12 @@ Requirement	Limit
 2.	Settling time into ±1°	≤ 0.70 s
 3.	Final error	≤ 0.40°
 
-### General Advice
+### General Questions
+1. Your turret settles 2° short of the target every time and stays there. Which term is missing, and why does adding it fix this specifically?
+2. Why is "add D, then raise P again" better than just picking a Kp and adding D once?
+3. Your IMU only publishes a new reading every 10 ms, but your control loop runs every 1 ms. What is the D term looking at on the nine ticks in between?
+
+### Advice
 
 If the response is slow & never overshoots, Kp is too low
 If the response overshoots then settles, not enough kD.	Add Kd first before touching Kp
