@@ -117,6 +117,8 @@ In identifying our system, (how it works and how it responds to different inputs
 
 When we input this signal into our system, we can then analyze how our system responds and reacts. Ideall, we would want the system output to match the system input. That is, if I command my motor to position 1 instantaneously, my motor instantaneously moves to this position. In reality, this isn't possible, but using controls we can optimize this performance. Look at the graph below, you can see how different control signals can imapct the step response.
 
+![Step Response](Assets/step_response.gif)
+
 
 ## Your assignment
 
