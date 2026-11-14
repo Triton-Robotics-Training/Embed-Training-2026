@@ -86,3 +86,35 @@ In this while(true) loop, we should call a periodic function. In this case for s
 
 Make sure to get your code checked by your embed lead before you test. 
 
+## Ozone 
+
+Often times, after we've implemented some code, we want to then test and measure its performance. While certainly the easiest way to do this is print statements, there are a few problems with that.
+
+1. Most obviously, we can't visualize print statements, and it can be difficult to understand how values change over time if you're just doing a print statement
+
+2.  Print statements will slow down our code 
+
+3.  Print statements are executed rapidly, and we can't go step by step
+
+That being said, print statements like `printk()` (basically printf but less-blocking) are your friends if you're doing quick validation, but the question arises: how can we deal with these limitations of print statements?
+
+One way of dealing with them is through the use of the Ozone debugger. If you've set up Zephyr, you already have this set up, but it's admittedly an engineer's tool: powerful, but not intuitive. 
+
+### Quality of life
+
+If you're inexperienced with real time debuggers, you'll probably have the following thought when first opening Ozone: "what the fuck am I looking at?"
+
+To make your life easier, I suggest having the following configuration of windows in Ozone (note that you can always enable windows under "view" at the top)
+
+TODO: ADD PICTURE HERE
+
+### Graphing in Ozone
+
+Arguably the most useful utility of Ozone is the ability to plot and graph data over time. Something you'll notice is that on the top right, you'll see your global variables.
+In these global variables, you can right-click on one and select graph (or alternatively hold control-G when clicking it), which will add it to your watched data and timeline. Make sure to 
+
+- Check the box in the timeline to enable graphing for it
+
+- Up your timeline division from 1 nanosecond to something reasonable (I recommend 5 seconds for most data)
+
+Okay, so looking back to our list of issues, this obviously solves our first issue 
